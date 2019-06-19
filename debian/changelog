@@ -1,0 +1,175 @@
+doxyparse (1.8.14-7) unstable; urgency=medium
+
+  * limit identifiers to 1024 chars
+  * avoiding defined_in empty keys
+  * removing "\" from function signatures
+  * fix override args references
+
+ -- Joenio Costa <joenio@joenio.me>  Tue, 25 Sep 2018 14:21:18 -0300
+
+doxyparse (1.8.14-6) unstable; urgency=medium
+
+  * fix SIGABRT parsing mlpack-3.0.0 project source-code
+
+ -- Joenio Costa <joenio@joenio.me>  Sat, 14 Apr 2018 13:39:16 -0300
+
+doxyparse (1.8.14-5) unstable; urgency=medium
+
+  * removing double quotes from function signature
+  * check if ArgumentList is null
+
+ -- Joenio Costa <joenio@joenio.me>  Fri, 23 Mar 2018 14:49:00 -0300
+
+doxyparse (1.8.14-4) unstable; urgency=medium
+
+  * don't report same module/class more than once analizo/analizo#112
+  * add missing key "defines:" to all modules analizo/analizo#111
+  * check if string is larger than 1 before removing surrounding quotes analizo/analizo#110
+
+ -- Joenio Costa <joenio@joenio.me>  Fri, 02 Feb 2018 11:53:05 -0200
+
+doxyparse (1.8.14-3) unstable; urgency=medium
+
+  * properly detects package methods
+  * output inheritance as list instead of hash
+
+ -- Joenio Costa <joenio@joenio.me>  Sun, 07 Jan 2018 16:17:30 -0200
+
+doxyparse (1.8.14-2) unstable; urgency=medium
+
+  * adding double quotes around functions and variables names
+  * removing double quotes from signatures
+  * added "---" yaml start document
+
+ -- Joenio Costa <joenio@joenio.me>  Tue, 02 Jan 2018 02:00:05 -0200
+
+doxyparse (1.8.14-1) unstable; urgency=medium
+
+  * install instructions from source
+  * Merge tag 'Release_1_8_14'
+  * fix doxyparse segfault for python source files
+  * removing double quotes from function arguments list
+  * added --version flag to doxyparse
+
+ -- Joenio Costa <joenio@joenio.me>  Fri, 29 Dec 2017 00:17:02 -0200
+
+doxyparse (1.8.14~rc1) unstable; urgency=medium
+
+  [ Joenio Costa ]
+  * Extensions .py, .pyw (python) and .cs (csharp) added as non-C files
+  * The output format now is YAML
+  * Doxyparse master branch rebased with Doxygen upstream master branch
+
+  [ Jonathan Moraes ]
+  * new Doxyfile option: MODIFY_SPECIAL_CHARS
+
+ -- Joenio Costa <joenio@joenio.me>  Tue, 04 Jul 2017 14:13:58 -0300
+
+doxyparse (1.8.11-1) unstable; urgency=low
+
+  [ Joenio Costa ]
+  * New upstream release 1.8.11
+
+ -- Joenio Costa <joenio@colivre.coop.br>  Mon, 18 Jan 2016 12:32:20 -0200
+
+doxyparse (1.5.9-1) unstable; urgency=low
+
+  [ Antonio Terceiro ]
+  * Allow simulateneously running doxyparse instances
+  * print full file name
+
+ -- Joenio Costa <joenio@colivre.coop.br>  Mon, 21 Jan 2013 21:09:24 -0300
+
+doxyparse (1.5.8-11) unstable; urgency=low
+
+  [ Vinicius Daros ]
+  * Updating install destination path in Makefile.in
+
+  [ Antonio Terceiro ]
+  * Allow reading input files from standard input
+  * Don't run doxyparse with an empty input list
+
+ -- Antonio Terceiro <terceiro@softwarelivre.org>  Tue, 15 Feb 2011 15:57:11 -0300
+
+doxyparse (1.5.8-10) unstable; urgency=low
+
+  [ joaomm ]
+  * Fixing the @code bug
+  * Just a simple refactoring in function lookupSymbol
+  * Implementing method complete signature
+  * Some refactorings and erasing a whitespace
+
+  [ Antonio Terceiro ]
+  * Making a new release.
+
+ -- Antonio Terceiro <terceiro@softwarelivre.org>  Tue, 13 Apr 2010 14:38:25 -0300
+
+doxyparse (1.5.8-9) unstable; urgency=low
+
+  [ Paulo Meirelles ]
+  * adding number of contidionals path (JoaoMM, Lucianna, PauloRMM)
+  * adding number of parameters(JoaoMM, Lucianna, PauloRMM)
+  * adding abstract class report
+
+  [ joaomm ]
+  * Fixing the segmentation fault (lucianna and joaomm)
+
+  [ Antonio Terceiro ]
+  * Making a new release
+
+ -- Antonio Terceiro <terceiro@softwarelivre.org>  Thu, 11 Mar 2010 10:13:33 -0300
+
+doxyparse (1.5.8-8) unstable; urgency=low
+
+  * Correctly detecting the programming language.
+  * Fixing problem with instance variables and arguments with the same
+    name
+
+ -- Antonio Terceiro <terceiro@softwarelivre.org>  Sat, 30 Jan 2010 20:38:23 -0200
+
+doxyparse (1.5.8-7) unstable; urgency=low
+
+  * More robust discovery of current user name.
+
+ -- Antonio Terceiro <terceiro@softwarelivre.org>  Mon, 02 Nov 2009 23:47:04 -0300
+
+doxyparse (1.5.8-6) unstable; urgency=low
+
+  * printing protection of struct members
+
+ -- Antonio Terceiro <terceiro@softwarelivre.org>  Thu, 29 Oct 2009 12:43:49 -0300
+
+doxyparse (1.5.8-5) unstable; urgency=low
+
+  * Extracting methods to print classes and files
+  * Don't list structs in C code as proper modules
+
+ -- Antonio Terceiro <terceiro@softwarelivre.org>  Thu, 15 Oct 2009 19:44:23 -0300
+
+doxyparse (1.5.8-4) unstable; urgency=low
+
+  * Using one temporary directory for each user
+
+ -- Antonio Terceiro <terceiro@softwarelivre.org>  Tue, 13 Oct 2009 17:15:41 -0300
+
+doxyparse (1.5.8-3) unstable; urgency=low
+
+  * Using 3 spaces for inheritance information.
+
+ -- Antonio Terceiro <terceiro@softwarelivre.org>  Mon, 12 Oct 2009 22:19:52 -0300
+
+doxyparse (1.5.8-2) unstable; urgency=low
+
+  [ João M. Miranda ]
+  * Extracting more information from source code
+
+  [ Antonio Terceiro ]
+  * List constructors as methods too
+
+ -- Antonio Terceiro <terceiro@softwarelivre.org>  Mon, 12 Oct 2009 15:29:44 -0300
+
+doxyparse (1.5.8-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Antonio Terceiro <terceiro@softwarelivre.org>  Tue, 06 Oct 2009 15:51:21 -0300
